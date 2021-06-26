@@ -8,6 +8,7 @@
 </head>
 <style>
      .box1{
+            
             border:darkblue 2px solid;
             text-align: center;
             width: 33%;
@@ -15,8 +16,23 @@
             position: relative;
             background-color: aqua;
            
-
        }
+
+       #box{
+            
+            animation: myanim 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards; /*-makes animation stick*/
+            
+        }
+
+
+    @keyframes myanim{
+            
+        from{left: -20px}
+        to{left: 470px}
+           
+    }
 </style>
 <body>
 
