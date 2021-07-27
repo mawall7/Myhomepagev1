@@ -5,8 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- googleapisfont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
 </head>
 <style>
+    *{
+        background-color: rgb(187, 213, 214);
+        box-sizing: border-box;
+    }
      .box1{
             
             border:darkblue 2px solid;
@@ -14,19 +24,16 @@
             width: 33%;
             height: 70px;
             position: relative;
+            cursor:pointer;
            
-           
-           
+       }
+
+       .bgnone{
+           background-color: transparent !important;
        }
        
 
-       #box, #box2, #box3{
-            
-            animation: myanim 1s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards; /*-makes animation stick*/
-            
-        }
+        
         #box{
             background-image: url(https://media.istockphoto.com/vectors/abstract-wavey-blue-pattern-background-vector-id1264879445?b=1&k=6&m=1264879445&s=170667a&w=0&h=4bB9LpXgGqA6wB5X3b6Bwtd5Z6zLrni_KAq3jqFCr5M=);
         }
@@ -52,11 +59,22 @@
 
     .p1{
         padding-top: 2%;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+        /* font-family: 'Abel', sans-serif; */
+        font-family: 'Roboto', sans-serif;
     }
     h1{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-decoration: underline;
+        /* font-family: 'Abel', sans-serif; */
+        font-family: 'Roboto', sans-serif;
+        /* font-family: Georgia, 'Times New Roman', Times, serif; */
+        /* text-decoration: underline; */
+        text-shadow: white transparent 1px 2px;
+    
+    }
+    .myheader{
+        background-color: white;
+        margin:0%;
+        
     }
     .center{
         text-align: center;
@@ -68,11 +86,23 @@
     a{
         text-decoration: none;
     }
-    #presentation{
+    .presentation{
         position: relative;
         top:1%;
-        margin:5em;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left:12em;
+        margin-right: 12em;
+        font-family: 'Abel', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
+        /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+        ;
+        /* margin-top: 10em; */
+    }
+    .roboto{
+            font-family: 'Roboto', sans-serif;
+    }
+    .abel{
+        font-family: 'Abel', sans-serif;
+
     }
     .container ul{
         max-width:200px;
@@ -84,56 +114,410 @@
         margin-left:auto;
         margin-right:auto;
         display: block;
+       
                 
     }
     h4{
         text-decoration: underline;
     }
     
-
+   
+   .box-animation{
+    animation: myanim 1s 1;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     
+    }
+    
+    .box1{
+        color:black;
+    }
+/* hr{
+    margin-top: 1em;
+    margin-bottom: 5em;
+} */
+    
+.marginbottom{
+    margin-bottom:11%;
+}
+.margintop{
+    margin-top:5%;
+}
+.marginbottom2{
+    margin-bottom: 20%;
+}
+.marginbottom5{
+    margin-bottom: 5%;
+}
+.font1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.colorblue{
+    color: blue;
+}
+
+.column1 {
+        float: left;
+        width: 35%;
+        /* padding: 10px; */
+        height: 50px; 
+        /* margin-left:10%*/
+        
+        } 
+
+.column {
+        float: left;
+        width: 25%;
+        /* padding: 10px; */
+        height: 500px; 
+        /* margin-left:10%*/
+        
+        } 
+    
+     .row:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+   .cloudtext{
+        position: absolute; 
+        bottom: 250px;
+        /* left: 43.5%; */
+        
+   }
+   .myul{
+       display: relative;
+       bottom: 10px;
+   }
+   .myli{
+       margin-bottom: 4px;
+       background-color: white;
+       font-size: 15px;
+       
+   }
+   li{
+       font-family: 'Abel', sans-serif;
+       
+       
+   }
+   .header{
+       padding-top: 2%;
+       padding-bottom:2%;
+       
+   }
+   .row2{
+       background-color: white;
+   }
+   .bgw{
+        background-color: white;
+   }
+   .linline{
+       display: inline;
+   }
+   .trs{
+       background-color: transparent;
+   }
+.container1{
+   width:100%;
+    text-align: center;
+}
+p{
+    margin:2px;
+    font-family: 'Abel', sans-serif;
+}
+.mylist{
+    font-family:'Abel', sans-serif;
+    width:fit-content;
+    padding-left: 7%;
+    padding-right: 7%;
+    text-align: center;
+    margin:auto;
+
+   
+}
+
+td{
+    padding:7px;
+}
+
+th{
+    text-decoration: underline;
+}
+
+   
+
 </style>
-<body>
-<br>
-<h1 class="center">Min sida</h1>
+<body style="margin-top:0%; margin-left: 0%;margin-right: 0%;">
+    
+
+  <div class="header row bgw" style="background-color: white;">
+
+    <div class="column1 bgw">
+        <h1 class="bgw" style=" padding-left: 4%; font-size: 20px; margin-top:3%"><em class="bgw">M</em>attias <em class="bgw">W</em>allerman</h1>
+    </div>
+    <!-- <div class="column1 bgw">
+        <h1 class="myheader bgw"> Webdesign och webutveckling </h1>
+    </div> -->
+    <ul class="bgw" style="float:right; padding-right: 5%; font-size: 20px;">
+        
+        <li class="linline"><a class="bgw" href="#news">News&nbsp;</a></li>
+        <li class="linline"><a class="bgw" href="#contact">Contact&nbsp;</a></li>
+        <li class="linline"><a class="bgw" href="#about">About</a></li>
+      </ul>
+      
+</div>
+
+<div id ="presentation" class="presentation margintop marginbottom5">
+    
+   
+    <br>
+    <p class="center"><strong>Hej! Jag är ny webutvecklare, inriktad mot ux-design, web- och applikationsutveckling.</strong>  Du kommer här att hitta exempel på genomförda projekt och exempel på hur en websida som du beställer kan se ut. Här finns exempel på mallar som du kan utgå ifrån när jag skapar din hemsida, men, jag kan också anpassa mig efter dina specifika önskemål. </p>
+
+</div>
+
+<!-- <hr style="width:80%"> -->
 <br><br>
 
-<div class="boxcontainer">
 
-<div id="box" class="box1">
-    <p class="p1"><a class="textwhite" href="#presentation">Presentation</a></p> 
+
+
+
+ 
+
+
+
+<!-- <div class="container1"  style="margin:auto;width:50%;">
+    <ul  style="background-color:white; list-style-type:none">
+        <li class="myli" >
+            Html</span>
+        </li>
+       <li class="myli">
+          Din Hemsida
+       </li>
+       <li class="myli">
+           Bootstrap 
+       </li>
+       <li class="myli">
+           Responsiv layout m.m.
+        </li>
+        <li class="myli">
+            Design efter dina behov
+         </li>
+    </ul>
+
+</div> -->
+
+
+    
+
+<!-- <br><br><br><br><br> -->
+
+<div class="boxcontainer marginbottom5" style="z-index:5">
+
+<div id="box" class="box1" style="z-index:5" onclick="document.getElementById('link1').click()">
+    <p class="p1 bgnone"><a class="textwhite" id="link1" href="#presentation">Kompetenser</a></p> 
 </div>
 <br>
-<div id="box2" class="box1">
-    <p class="p1" ><a class="textwhite" href="presentation">Mina projekt</a></p> 
+<div id="box2" class="box1" style="z-index:5" onclick="document.getElementById('link2').click()">
+    <p class="p1 bgnone" ><a class="textwhite" id="link2" href="#content">Vad jag erbjuder</a></p> 
 </div>
 <br>
-<div id="box3" class="box1">
-    <p class="p1"><a class="textwhite" href="presentation">Länkar</a></p> 
+<div id="box3" class="box1" style="z-index:5" onclick="document.getElementById('link3').click()">
+    <p class="p1 bgnone"><a class="textwhite" id="link3" href="#links">Länkar/Mina projekt</a></p> 
 </div>
 </div>
-    <br>
-    <br>
-    <br>
-    <br>
     <hr style="width:80%">
 
-
-
-<div id="presentation">
-    <h3>Hej! Jag heter Mattias och är en ny webutvecklare, som kan ux-design, web- och applikationsutveckling. Du hittar här exempel på genomförda projekt och exempel på hur en websida som du beställer kan se ut. Här finns exempel på mallar som jag du kan utgå ifrån när jag skapar din hemsida, men, jag kan också anpassa mig efter dina specifika önskemål. </h2>
+<div class="margintop marginbottom5">
+    <h2 class="center roboto">Kompetenser
+    </h2><br>
+ 
+    <div class="container1">
+        <i class="fa fa-cloud" style="z-index:1; font-size:320px; position:relative; top:0px;color:white; background-color: transparent; color:white;" ></i>
+    </div> 
     
-    <h4 class="center">Några områden som jag behärskar</h4>
-    <div  class="container">
-    <ul> 
-        <li>Html5</li>
-        <li>Bootstrap</li>
-        <li>Javascript(grund)</li>
-        <li>.Net C#</li>
+    <div class="margin1 mylist" style="z-index:2; top:-310px; position: relative; margin-bottom: -300px; margin-top: 100px;background-color: transparent;">
+        <h4 class="roboto trs">Några områden som<br>jag behärskar</h4> 
+        <ul class="trs" style="z-index:2; position: relative;"> 
+            <li class="trs"><span class="bgw" style="position: relative; left:-34px">Html5</span></li>
+            <li class="trs"><span class="bgw" style="position: relative; left:-24px">Bootstrap</span></li>
+            <li class="trs"><span class="bgw" style="position: relative; left:-22px">Javascript</span></li>
+            <li class="trs"><span class="bgw" style="position: relative; left:-30px">.Net C#</span></li>
+        </ul>
+    
+    
+    </div>
+</div>
+    
+    
+  
+    <!-- <div class="margin1 mylist" style="z-index:2;position: relative; top:-160px; background-color: transparent;">
+        -Din hemsida <br>
+        -Responsiv layout <br>
+        -Design efter dina behov <br>
+   </div>
+     -->
+     
+    
+<hr style="width:80%">
+<div id="content" class="presentation margintop margin5">
+    
+    <h2 class="center roboto">Vad jag erbjuder
+    </h2><br>
+    <div>   <strong>Jag kan erbjuda webbsidor/hemsidor till  företag och privatpersoner</strong>. Det du behöver ha är en domän. Den kan köpas på nätet. Du vill antagligen ha en hemsida kopplad till ditt namn eller hemsidas namn. Det är inget du behöver tänka på utan det hjälper jag dig med.
+            &nbsp;Det finns många försäljare av domäner. Du kan t.ex. köpa en via länken här: <a href="https://www.simply.com/se/domains/">simply.com</a>
+            Tänk på att .se domäner är billigare än .com.Förutom priset så spelar det ingen roll om du väljer .se eller .com. Din sida kommer oavsett att vara synlig varsomhelst ifrån i hela världen. Här finns lite information som kan vara bra att känna till om domäner<a href="https://bolagsverket.se/ff/foretagsformer/namn/skydd-1.2623">bolagsverket.se.</a>                 
+            <br><br>24 timmar efter ditt köp är din domän registrerad och går att se på nätet. För att du ska vara nöjd med din sida redan när den syns på nätet, gör vi den färdig innan den registreras. När vi båda är överens om att sidan är färdig då kommer den strax finnas tillgänglig för dig eller dina kunder.
+        <br><br>
+        Du kan när din sida är färdig koppla ditt företag till en bokningstjänst. Även det hjälper jag dig med. Det finns prenumerationstjänster och företag som erbjuder den tjänsten t.ex. boka.se. Då kan du länka din hemsida dit. Om du istället vill börja prenumerera på bokningstjänsten själv går det utmärkt, annars skapar vi länken efteråt till en mindre kostnad.  
+        </div><br><br>
+        <!-- <div style="position: relative; margin:auto">
+            <i class="fa fa-cloud" style=" z-index:1; font-size:330px; color:white; position:absolute; top:56%; margin-left:-20%; background-color: transparent; color:white;" ></i>
+        </div>    
+        <h4 class="center roboto trs" style="z-index:2; position: relative;">I din sida kan t.ex. ingå:</h4>
+        <div  class="container">
+            <ul class="trs" style="z-index:2; position: relative;"> 
+                <li class="trs">Mejlkontakt</li> 
+                <li class="trs">Google maps karta (hitta hit)</li>
+                <li class="trs">Olika typsnitt</li>
+                <li class="trs">Översättning till olika språk( kommer :))</li>
+        </ul>
+        </div> -->
         
-    </ul>
 </div>
+    <div class="container1">
+        <i class="fa fa-cloud" style="z-index:1; font-size:310px; position:relative; top:-40px; background-color: transparent; color:white;" ></i>
+    </div>  
+    
+    <div class="margin1 mylist" style="z-index:2; top:-265px; position: relative; margin-bottom: -180px; background-color: transparent;">
+        <h4 class="roboto trs">I din sida kan t.ex. ingå</h4> 
+        <ul class="trs" style="z-index:2; position: relative; left:10px"> 
+            <li class="trs"><span class="trs" style="position: relative; left:-76px">Mejlkontakt</span></li>
+            <li class="trs"><span class="trs" style="position: relative; left: -70px">Olika typsnitt</span></li>
+            <li class="trs"><span class="trs" style="position: relative; left:-56px">Google maps karta</span></li>
+            <li class="trs"><span class="trs" style="position: relative; left:5px">Översättning till olika språk(kommer:))</span></li>
+        </ul>
+    </div>
+    
+    
+    <h2 class="roboto center" style="text-decoration:underline">Prislista</h2>
+    <div class="mylist" style="text-align: center; z-index:2;">
+    <table style="z-index:2; left:10px; margin:auto; margin-bottom:5%"> 
+        <tr>
+            <th>Vad?</th>
+            <th>Pris</th>
+        </tr>
+        <tr>
+            <td>Hemsida (välj bilder själv)</td>
+            <td>3000:-</td>
+        </tr>
+            <td style="position:relative; padding-left: 54px;">Hemsida efter speciella önskemål</td>
+            <td>4000:-</td>
+            
+    </table>
+    
 </div>
+
+   
+        <hr style="width: 80%">
+        <br><br>
+            <h2 id="links" class="center presentation roboto">Länkar/Mina projekt</h2><br>
+            
+            <div class="row center abel" style="margin-bottom: 400px;">
+                <div class="column">
+                   <span>Exempel layout 1</span> 
+                   <br><br>
+                    <a target="_blank" href="Picture1.gif">
+                    <img src="https://lh3.googleusercontent.com/pw/AM-JKLWOJFKQ5YoHpOjV8oXnu1iqaKqs9d0lM0RWRRbTbo6S7JrwUng4pqdU6dD06673GfHTuZpKkcEKpUdA8zWUEzQVsG-mCTGdTO_wzq_kKRN7gtQToY4ugd7RCrL34Qgr1zAbU8esye7JpeUdyeXKGeJo=w151-h799-no" alt="Forest" style="width:150px">
+                  </a>
+                </div>
+     
+                <div class="column" style="margin-left:12%">
+                    <span><a href="bootst.html">Bootstrap design exempel</a></span>
+                    <br><br>
+                    
+
+                        <span>exempel projekt:</span>
+                        <br><br>
+                        <a href="bandexempel.html">tributehemsida band</a>
+                        <br><br>
+                        <a href="snojsexempel.html">vinterlandskap</a>
+                        
+                </div>
+
+                <div class="column" style="margin-left: 12%;">
+                    <span >Länkar</span>
+                    <br><br>
+                    <a href="https://www.simply.com/se/domains/">simply.com</a>
+                    <br>
+                    <a href="https://bolagsverket.se/ff/foretagsformer/namn/skydd-1.2623">bolagsverket.se.</a>
+                    <br>
+                    <a href="imageslinks.html">bildkällor</a>
+                </div>
+            </div>
+            <br>
+            <footer style="background-color:rgb(36, 107, 139);width:100%;height:200px">
+               
+            </footer>
+        
+        
+
+
+
+
+<script>
+    const scrollelements = document.querySelectorAll('.box1');
+    
+    
+    let offset = 1000;
+
+
+const elementInView = (el, offset = 0) => {
+  const elementTop = el.getBoundingClientRect().top;
+ 
+  return (
+    elementTop <= 
+    ((window.innerHeight || document.documentElement.clientHeight) - offset)
+  );
+};
+
+const displayanimationclass = (el)=>{
+    
+        el.classList.add('box-animation');
+    }
+
+const hideScrollElement =(el)=>{
+       
+        el.classList.remove('box-animation');
+    
+}
+    
+
+
+const handleScrollAnimation =()=>{
+    scrollelements.forEach((el)=>{
+        if(!elementInView(el,offset)){ //to do : funktionen är egentligen skriven för att scrolla uppifrån men, den fungerar nedifrån om man returnerar motsatsen istället. 
+            displayanimationclass(el);
+            console.log("inview");
+        } else{
+            console.log("notinview");
+            hideScrollElement(el);
+        }
+    })   
+}
+
+scrollelements.forEach((el)=>{
+        displayanimationclass(el);
+
+    })
+
+window.addEventListener('scroll', () =>{
+    handleScrollAnimation();
+})
+
+
+
+</script>
 
     
 </body>
